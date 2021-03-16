@@ -7,7 +7,9 @@
 
 import UIKit
 
-class CharacterInfoController: UIViewController {
+class CharacterInfoController: UIViewController, Coordinating {
+    var coordinator: Coordinator?
+    
 
     var mainView = CharacterInfoView()
     
