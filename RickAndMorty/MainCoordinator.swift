@@ -23,8 +23,12 @@ class MainCoordinator: Coordinator {
     func start() {
         var vc: UIViewController & Coordinating = CharacterInfoController()
         vc.coordinator = self
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = UIColor.clear
         navigationController?.setViewControllers([vc], animated: false)
-        navigationController?.navigationBar.isTranslucent = true
+//        navigationController?.navigationBar.isTranslucent = true
     }
     
 }

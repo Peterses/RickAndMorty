@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6500AE5726014C2800812CA9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6500AE5626014C2800812CA9 /* TabBarViewController.swift */; };
+		6500AE5A26014D0600812CA9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6500AE5926014D0600812CA9 /* SearchViewController.swift */; };
+		6553992B26014FD500604D52 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6553992A26014FD500604D52 /* CharactersViewController.swift */; };
+		6553992E2601505900604D52 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6553992D2601505900604D52 /* FavouritesViewController.swift */; };
 		655875B226012AF800642052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655875B126012AF800642052 /* AppDelegate.swift */; };
 		655875B426012AF800642052 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655875B326012AF800642052 /* SceneDelegate.swift */; };
 		655875B626012AF800642052 /* CharacterInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655875B526012AF800642052 /* CharacterInfoController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6500AE5626014C2800812CA9 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		6500AE5926014D0600812CA9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6553992A26014FD500604D52 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
+		6553992D2601505900604D52 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		655875AE26012AF800642052 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		655875B126012AF800642052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		655875B326012AF800642052 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6500AE5526014BAC00812CA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				655875B326012AF800642052 /* SceneDelegate.swift */,
+				655875B126012AF800642052 /* AppDelegate.swift */,
+				655875BA26012AFB00642052 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		655875A526012AF800642052 = {
 			isa = PBXGroup;
 			children = (
@@ -64,15 +82,12 @@
 		655875B026012AF800642052 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
-				655875B126012AF800642052 /* AppDelegate.swift */,
-				655875B326012AF800642052 /* SceneDelegate.swift */,
+				6500AE5526014BAC00812CA9 /* Resources */,
 				655875CA26012B8C00642052 /* Model */,
 				655875D526012C7600642052 /* ViewModel */,
 				655875C626012B1000642052 /* View */,
 				655875D326012C3C00642052 /* Controller */,
 				655875CF26012BC000642052 /* Extensions */,
-				655875BA26012AFB00642052 /* Assets.xcassets */,
-				655875BC26012AFB00642052 /* LaunchScreen.storyboard */,
 				655875BF26012AFB00642052 /* Info.plist */,
 				655875D026012C1100642052 /* single_character_mock.json */,
 				65FDACFD26013DDC00177CCF /* Coordinator.swift */,
@@ -84,6 +99,7 @@
 		655875C626012B1000642052 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				655875BC26012AFB00642052 /* LaunchScreen.storyboard */,
 				655875C726012B6C00642052 /* CharacterInfoView.swift */,
 			);
 			path = View;
@@ -108,6 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				655875B526012AF800642052 /* CharacterInfoController.swift */,
+				6500AE5626014C2800812CA9 /* TabBarViewController.swift */,
+				6500AE5926014D0600812CA9 /* SearchViewController.swift */,
+				6553992A26014FD500604D52 /* CharactersViewController.swift */,
+				6553992D2601505900604D52 /* FavouritesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,12 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6500AE5726014C2800812CA9 /* TabBarViewController.swift in Sources */,
 				655875B626012AF800642052 /* CharacterInfoController.swift in Sources */,
 				65FDAD0126013ED800177CCF /* MainCoordinator.swift in Sources */,
+				6553992E2601505900604D52 /* FavouritesViewController.swift in Sources */,
+				6500AE5A26014D0600812CA9 /* SearchViewController.swift in Sources */,
 				655875CC26012BA000642052 /* CharacterModel.swift in Sources */,
 				65FDACFE26013DDC00177CCF /* Coordinator.swift in Sources */,
 				655875B226012AF800642052 /* AppDelegate.swift in Sources */,
 				655875C826012B6C00642052 /* CharacterInfoView.swift in Sources */,
+				6553992B26014FD500604D52 /* CharactersViewController.swift in Sources */,
 				655875B426012AF800642052 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

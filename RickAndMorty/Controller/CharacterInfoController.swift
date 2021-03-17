@@ -10,7 +10,7 @@ import UIKit
 class CharacterInfoController: UIViewController, Coordinating {
     var coordinator: Coordinator?
     
-
+    
     var mainView = CharacterInfoView()
     
     private func initView() {
@@ -21,17 +21,16 @@ class CharacterInfoController: UIViewController, Coordinating {
         let largeConfig = UIImage.SymbolConfiguration(scale: .large)
         if mainView.favuriteButton.isSelected {
             let icon = UIImage(systemName: "heart", withConfiguration: largeConfig)
-            UIView.animate(withDuration: 1) {
-                self.mainView.favuriteButton.setImage(icon, for: .normal)
-                self.mainView.favuriteButton.tintColor = .red
-            }
+            
+            self.mainView.favuriteButton.setImage(icon, for: .normal)
+            self.mainView.favuriteButton.tintColor = .systemRed
             self.mainView.favuriteButton.isSelected = false
         } else {
             let icon = UIImage(systemName: "heart.fill", withConfiguration: largeConfig)
-            UIView.animate(withDuration: 1) {
-                self.mainView.favuriteButton.setImage(icon, for: .normal)
-                self.mainView.favuriteButton.tintColor = .red
-            }
+            
+            self.mainView.favuriteButton.setImage(icon, for: .normal)
+            self.mainView.favuriteButton.tintColor = .systemRed
+            
             mainView.favuriteButton.isSelected = true
         }
     }
