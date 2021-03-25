@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0103F219219B6AA7ADBC5214D8496DC2 /* Nuke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 856DA28D8A3A0C4B6FFF74702A01510B /* Nuke-dummy.m */; };
+		02112224BE6602528C742732C2C19F68 /* ImagePipelineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A82823C6A799AFD42B1BA1F8457B1B /* ImagePipelineConfiguration.swift */; };
+		064E7B693C45CBEFED5111034105497E /* ResumableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3C0A0F716B5A04105AB7F79EBF8D68 /* ResumableData.swift */; };
+		0C09FB8B5D3B5DDADC2DA5F738194687 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE9D936CB94BA9B799A0BB89B20AB6 /* Atomic.swift */; };
+		148EA0720E6B917306C4E5600535186B /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D118A830720F1A9846F311869A876 /* ImageRequest.swift */; };
+		15E5CBAFA03D8AA149F66785CB55F1DA /* ImagePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A7C9712BDDA181A275A6FC00E88C8 /* ImagePipeline.swift */; };
+		188F408264642CBE9BFFD2449ABF812F /* Allocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD5D46749F2B46B58E40A9255FB3E3 /* Allocations.swift */; };
+		1A6609AB54A588DE768E879A96BBD099 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C4474AB7549BE2762BBCE161A5997 /* Operation.swift */; };
+		212E1B82BCD628DBC3501191F3A65473 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		321F11886BADEF4D36AB5A811AE817CD /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E5112269A1EA31E399409C0B435DCE /* LinkedList.swift */; };
+		34DF58F17EA00F1EBA11D20C7EA031F5 /* Pods-RickAndMorty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 123D90682E4F07757B3E2A81FC96E757 /* Pods-RickAndMorty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41D9354B315DA48F765C27E8FB37F905 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4D0B9D6BE85A98A30429C1EE8FF5BA57 /* ImageDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5457F924DE7B1B27CD9D844048B842 /* ImageDecoding.swift */; };
+		55AAB3202E4107570415A6E1E9F17CD4 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D24910C30E3087A4D7CBF25DFC18DD /* Log.swift */; };
+		6AD393FD0D0B45E1EE3D14C14CDC11FB /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2214A2202A480774B36DC546D5B6F /* DataCache.swift */; };
+		75035A4A466E37C9FF8013527CB4941D /* TaskLoadImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B9524116607D34B24C355A76FA592A /* TaskLoadImageData.swift */; };
+		7BB993553CEFC8AAB19124344773B51F /* Nuke-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9CD349335B311059D1B6AD83D727B63 /* Nuke-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948664CFAED08987D259743B22E7E40C /* ImagePreheater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC70436A8B481AB4FB2E4AB0342289 /* ImagePreheater.swift */; };
+		9849E8E73A02F57C2F6E54EF9C548570 /* ImagePipelineTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F73C4D488D0A079D90EFA79502CD3 /* ImagePipelineTask.swift */; };
+		9DC45A7A90E00673B175D5D1D3D0710E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0822F7AFF0E174423F52D0F73819ABF4 /* ImageCache.swift */; };
+		A2E810A66F500CE698D0A69138F91DA6 /* ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA396DA229BB8766F8C29C479AC3CD42 /* ImageViewExtensions.swift */; };
+		ABBB77E920F30DB1BFC34940F31F746B /* TaskProcessImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B0E29EA2108768372556B88915F8A /* TaskProcessImage.swift */; };
+		B8F3D7CCF070FC0DC712CDB0ECF53167 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D22896A93EAD5D90C8B697649AE2E9 /* DataLoader.swift */; };
+		C0FF8AEC9BE948D9567548A02A83BA34 /* Pods-RickAndMorty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B85E6C31BC4225FCAE1710179D6E13 /* Pods-RickAndMorty-dummy.m */; };
+		C31F8ED8CD8A8A21459F92414EDD9203 /* TaskDecodeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D31F6647F9AB61A4B7DC8011A2CD766 /* TaskDecodeImage.swift */; };
+		D4BDB6AD1384F1FD665B9261D59E0C46 /* TaskLoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E165F384E6C1B5EB0D3F998E51808 /* TaskLoadImage.swift */; };
+		D86C3D8070AC57297772FDC5C7D4156D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E36A274CEE0E7327E51EEE15872A52 /* Task.swift */; };
+		E8241FB0C636024B86467370714206C0 /* ImageEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6731F2CDCE9BAE5887D009F808A69 /* ImageEncoding.swift */; };
+		ED8F4D11750558E7D137D00F2EC6C87A /* ImageTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32EAC0067F94A44C1AD7F46871E84ED /* ImageTask.swift */; };
+		EDFC573E0411A0B37F1EC67D0FDFC985 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E6F5A8E249FC443A36378BBF8205B /* Extensions.swift */; };
+		F47D84DF5E378AABFAB3DD23196CA4A7 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFD3F49D58CAAA8B3E62F9B0AE3925 /* ImageProcessing.swift */; };
+		F62B08CF20AF68B582A7164D9B8ECF0B /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE3317631BEC40D388661352436795 /* Deprecated.swift */; };
+		FC755E52201A4CC2AFA62B91D9E41A70 /* RateLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770AA825C49378408C6F95012E2F2359 /* RateLimiter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		599644D2AF6441797F31E3B885B575AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 062A64896E847A6749F58B6BA9A931B1;
+			remoteInfo = Nuke;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011FA2146E5BD6BD8ADC6EC711E3709B /* Pods-RickAndMorty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RickAndMorty.debug.xcconfig"; sourceTree = "<group>"; };
+		01E36A274CEE0E7327E51EEE15872A52 /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Sources/Tasks/Task.swift; sourceTree = "<group>"; };
+		02DE9D936CB94BA9B799A0BB89B20AB6 /* Atomic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Atomic.swift; path = Sources/Internal/Atomic.swift; sourceTree = "<group>"; };
+		0822F7AFF0E174423F52D0F73819ABF4 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
+		09D24910C30E3087A4D7CBF25DFC18DD /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Sources/Internal/Log.swift; sourceTree = "<group>"; };
+		0CB2214A2202A480774B36DC546D5B6F /* DataCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataCache.swift; path = Sources/DataCache.swift; sourceTree = "<group>"; };
+		1196A0626843ECC1A3C0DF13D98B6CA5 /* Pods-RickAndMorty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RickAndMorty.release.xcconfig"; sourceTree = "<group>"; };
+		123D90682E4F07757B3E2A81FC96E757 /* Pods-RickAndMorty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RickAndMorty-umbrella.h"; sourceTree = "<group>"; };
+		13B1912B254AF3F582482D44858B8CF3 /* Pods-RickAndMorty-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RickAndMorty-frameworks.sh"; sourceTree = "<group>"; };
+		189E165F384E6C1B5EB0D3F998E51808 /* TaskLoadImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskLoadImage.swift; path = Sources/Tasks/TaskLoadImage.swift; sourceTree = "<group>"; };
+		22EA6CB8FC711BDB75B2E464A4A47A48 /* Nuke-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nuke-prefix.pch"; sourceTree = "<group>"; };
+		27B85E6C31BC4225FCAE1710179D6E13 /* Pods-RickAndMorty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RickAndMorty-dummy.m"; sourceTree = "<group>"; };
+		28D22896A93EAD5D90C8B697649AE2E9 /* DataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Sources/DataLoader.swift; sourceTree = "<group>"; };
+		2DAD7D76FC007F48AE48F2FD15BF01BB /* Nuke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nuke.framework; path = Nuke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B9524116607D34B24C355A76FA592A /* TaskLoadImageData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskLoadImageData.swift; path = Sources/Tasks/TaskLoadImageData.swift; sourceTree = "<group>"; };
+		48FFD3F49D58CAAA8B3E62F9B0AE3925 /* ImageProcessing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessing.swift; path = Sources/ImageProcessing.swift; sourceTree = "<group>"; };
+		4C1D118A830720F1A9846F311869A876 /* ImageRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRequest.swift; path = Sources/ImageRequest.swift; sourceTree = "<group>"; };
+		56643C6CBF3A3FFA36610A8F8843BFC7 /* Pods-RickAndMorty-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RickAndMorty-Info.plist"; sourceTree = "<group>"; };
+		5A2E6F5A8E249FC443A36378BBF8205B /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Internal/Extensions.swift; sourceTree = "<group>"; };
+		5AC6731F2CDCE9BAE5887D009F808A69 /* ImageEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageEncoding.swift; path = Sources/ImageEncoding.swift; sourceTree = "<group>"; };
+		6D31F6647F9AB61A4B7DC8011A2CD766 /* TaskDecodeImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDecodeImage.swift; path = Sources/Tasks/TaskDecodeImage.swift; sourceTree = "<group>"; };
+		6D4FA98349832A92398772BAE363E7ED /* Nuke.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Nuke.modulemap; sourceTree = "<group>"; };
+		711A7C9712BDDA181A275A6FC00E88C8 /* ImagePipeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePipeline.swift; path = Sources/ImagePipeline.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		770AA825C49378408C6F95012E2F2359 /* RateLimiter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RateLimiter.swift; path = Sources/Internal/RateLimiter.swift; sourceTree = "<group>"; };
+		80E7638BD424CB5FA267126C70E6E151 /* Pods-RickAndMorty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RickAndMorty.modulemap"; sourceTree = "<group>"; };
+		856DA28D8A3A0C4B6FFF74702A01510B /* Nuke-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Nuke-dummy.m"; sourceTree = "<group>"; };
+		890012EA904BCB8B85B124ADF2A26CC9 /* Pods_RickAndMorty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RickAndMorty.framework; path = "Pods-RickAndMorty.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		935C4474AB7549BE2762BBCE161A5997 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = Sources/Internal/Operation.swift; sourceTree = "<group>"; };
+		93BE3317631BEC40D388661352436795 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/Deprecated.swift; sourceTree = "<group>"; };
+		9CDB54C180CA3570C035490720069F0D /* Pods-RickAndMorty-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RickAndMorty-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3E5112269A1EA31E399409C0B435DCE /* LinkedList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkedList.swift; path = Sources/Internal/LinkedList.swift; sourceTree = "<group>"; };
+		A48F4DB6D0AA4D8009298709AC21DA7E /* Nuke-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Nuke-Info.plist"; sourceTree = "<group>"; };
+		B3A82823C6A799AFD42B1BA1F8457B1B /* ImagePipelineConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePipelineConfiguration.swift; path = Sources/ImagePipelineConfiguration.swift; sourceTree = "<group>"; };
+		B7DC70436A8B481AB4FB2E4AB0342289 /* ImagePreheater.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePreheater.swift; path = Sources/ImagePreheater.swift; sourceTree = "<group>"; };
+		BA396DA229BB8766F8C29C479AC3CD42 /* ImageViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageViewExtensions.swift; path = Sources/ImageViewExtensions.swift; sourceTree = "<group>"; };
+		BCBFB2C98253A925382ED746E2F28F69 /* Nuke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nuke.release.xcconfig; sourceTree = "<group>"; };
+		BCEAE9D9815D9462D44DCA28E54912BE /* Nuke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nuke.debug.xcconfig; sourceTree = "<group>"; };
+		D9CD349335B311059D1B6AD83D727B63 /* Nuke-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nuke-umbrella.h"; sourceTree = "<group>"; };
+		DA8B0E29EA2108768372556B88915F8A /* TaskProcessImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskProcessImage.swift; path = Sources/Tasks/TaskProcessImage.swift; sourceTree = "<group>"; };
+		DB5457F924DE7B1B27CD9D844048B842 /* ImageDecoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDecoding.swift; path = Sources/ImageDecoding.swift; sourceTree = "<group>"; };
+		E1FD5D46749F2B46B58E40A9255FB3E3 /* Allocations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Allocations.swift; path = Sources/Internal/Allocations.swift; sourceTree = "<group>"; };
+		E37E8B6D7532646A7A428A521DED594A /* Pods-RickAndMorty-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RickAndMorty-acknowledgements.plist"; sourceTree = "<group>"; };
+		E39F73C4D488D0A079D90EFA79502CD3 /* ImagePipelineTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePipelineTask.swift; path = Sources/Tasks/ImagePipelineTask.swift; sourceTree = "<group>"; };
+		F32EAC0067F94A44C1AD7F46871E84ED /* ImageTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTask.swift; path = Sources/ImageTask.swift; sourceTree = "<group>"; };
+		FA3C0A0F716B5A04105AB7F79EBF8D68 /* ResumableData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResumableData.swift; path = Sources/Internal/ResumableData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16371121D6F85D77485C88578AF02B95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41D9354B315DA48F765C27E8FB37F905 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26CF6F2BA25EE6674EFF0F003ED64523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212E1B82BCD628DBC3501191F3A65473 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05B420BEF7D57DDF1E30C7CD5EDB9785 /* Pods-RickAndMorty */ = {
+			isa = PBXGroup;
+			children = (
+				80E7638BD424CB5FA267126C70E6E151 /* Pods-RickAndMorty.modulemap */,
+				9CDB54C180CA3570C035490720069F0D /* Pods-RickAndMorty-acknowledgements.markdown */,
+				E37E8B6D7532646A7A428A521DED594A /* Pods-RickAndMorty-acknowledgements.plist */,
+				27B85E6C31BC4225FCAE1710179D6E13 /* Pods-RickAndMorty-dummy.m */,
+				13B1912B254AF3F582482D44858B8CF3 /* Pods-RickAndMorty-frameworks.sh */,
+				56643C6CBF3A3FFA36610A8F8843BFC7 /* Pods-RickAndMorty-Info.plist */,
+				123D90682E4F07757B3E2A81FC96E757 /* Pods-RickAndMorty-umbrella.h */,
+				011FA2146E5BD6BD8ADC6EC711E3709B /* Pods-RickAndMorty.debug.xcconfig */,
+				1196A0626843ECC1A3C0DF13D98B6CA5 /* Pods-RickAndMorty.release.xcconfig */,
+			);
+			name = "Pods-RickAndMorty";
+			path = "Target Support Files/Pods-RickAndMorty";
+			sourceTree = "<group>";
+		};
+		4FF294798D0BB6E732216C7269D13EEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD7D76FC007F48AE48F2FD15BF01BB /* Nuke.framework */,
+				890012EA904BCB8B85B124ADF2A26CC9 /* Pods_RickAndMorty.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54D7B0124C4AA0D0C843125B95B89874 /* Nuke */ = {
+			isa = PBXGroup;
+			children = (
+				E1FD5D46749F2B46B58E40A9255FB3E3 /* Allocations.swift */,
+				02DE9D936CB94BA9B799A0BB89B20AB6 /* Atomic.swift */,
+				0CB2214A2202A480774B36DC546D5B6F /* DataCache.swift */,
+				28D22896A93EAD5D90C8B697649AE2E9 /* DataLoader.swift */,
+				93BE3317631BEC40D388661352436795 /* Deprecated.swift */,
+				5A2E6F5A8E249FC443A36378BBF8205B /* Extensions.swift */,
+				0822F7AFF0E174423F52D0F73819ABF4 /* ImageCache.swift */,
+				DB5457F924DE7B1B27CD9D844048B842 /* ImageDecoding.swift */,
+				5AC6731F2CDCE9BAE5887D009F808A69 /* ImageEncoding.swift */,
+				711A7C9712BDDA181A275A6FC00E88C8 /* ImagePipeline.swift */,
+				B3A82823C6A799AFD42B1BA1F8457B1B /* ImagePipelineConfiguration.swift */,
+				E39F73C4D488D0A079D90EFA79502CD3 /* ImagePipelineTask.swift */,
+				B7DC70436A8B481AB4FB2E4AB0342289 /* ImagePreheater.swift */,
+				48FFD3F49D58CAAA8B3E62F9B0AE3925 /* ImageProcessing.swift */,
+				4C1D118A830720F1A9846F311869A876 /* ImageRequest.swift */,
+				F32EAC0067F94A44C1AD7F46871E84ED /* ImageTask.swift */,
+				BA396DA229BB8766F8C29C479AC3CD42 /* ImageViewExtensions.swift */,
+				A3E5112269A1EA31E399409C0B435DCE /* LinkedList.swift */,
+				09D24910C30E3087A4D7CBF25DFC18DD /* Log.swift */,
+				935C4474AB7549BE2762BBCE161A5997 /* Operation.swift */,
+				770AA825C49378408C6F95012E2F2359 /* RateLimiter.swift */,
+				FA3C0A0F716B5A04105AB7F79EBF8D68 /* ResumableData.swift */,
+				01E36A274CEE0E7327E51EEE15872A52 /* Task.swift */,
+				6D31F6647F9AB61A4B7DC8011A2CD766 /* TaskDecodeImage.swift */,
+				189E165F384E6C1B5EB0D3F998E51808 /* TaskLoadImage.swift */,
+				37B9524116607D34B24C355A76FA592A /* TaskLoadImageData.swift */,
+				DA8B0E29EA2108768372556B88915F8A /* TaskProcessImage.swift */,
+				8654BA6BF76910E7B5BE95FCD8EAE21F /* Support Files */,
+			);
+			name = Nuke;
+			path = Nuke;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8654BA6BF76910E7B5BE95FCD8EAE21F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D4FA98349832A92398772BAE363E7ED /* Nuke.modulemap */,
+				856DA28D8A3A0C4B6FFF74702A01510B /* Nuke-dummy.m */,
+				A48F4DB6D0AA4D8009298709AC21DA7E /* Nuke-Info.plist */,
+				22EA6CB8FC711BDB75B2E464A4A47A48 /* Nuke-prefix.pch */,
+				D9CD349335B311059D1B6AD83D727B63 /* Nuke-umbrella.h */,
+				BCEAE9D9815D9462D44DCA28E54912BE /* Nuke.debug.xcconfig */,
+				BCBFB2C98253A925382ED746E2F28F69 /* Nuke.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Nuke";
+			sourceTree = "<group>";
+		};
+		B02F6A06A3D7972CAD500593843962B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54D7B0124C4AA0D0C843125B95B89874 /* Nuke */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B02F6A06A3D7972CAD500593843962B0 /* Pods */,
+				4FF294798D0BB6E732216C7269D13EEB /* Products */,
+				DF5FEB3E057851A8F69E17D69046DCFA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF5FEB3E057851A8F69E17D69046DCFA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05B420BEF7D57DDF1E30C7CD5EDB9785 /* Pods-RickAndMorty */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		21C55F800D99FE60B00354B58D6172E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB993553CEFC8AAB19124344773B51F /* Nuke-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB79521F3271233E551516516777E4AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DF58F17EA00F1EBA11D20C7EA031F5 /* Pods-RickAndMorty-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		062A64896E847A6749F58B6BA9A931B1 /* Nuke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9603708E47050D6856B6F72AFC1764E4 /* Build configuration list for PBXNativeTarget "Nuke" */;
+			buildPhases = (
+				21C55F800D99FE60B00354B58D6172E7 /* Headers */,
+				028F4687C4DB1BC90D7637562248CA3A /* Sources */,
+				26CF6F2BA25EE6674EFF0F003ED64523 /* Frameworks */,
+				B9821AE607BB13D5F4C7FA99ED7C320A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nuke;
+			productName = Nuke;
+			productReference = 2DAD7D76FC007F48AE48F2FD15BF01BB /* Nuke.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3028B6B139525E7C6D164D5BD7B5EF0E /* Pods-RickAndMorty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E88830E8122DAE1DCCC0D079EC66DFE /* Build configuration list for PBXNativeTarget "Pods-RickAndMorty" */;
+			buildPhases = (
+				EB79521F3271233E551516516777E4AE /* Headers */,
+				DE284B288E411023ADD194FDB642D882 /* Sources */,
+				16371121D6F85D77485C88578AF02B95 /* Frameworks */,
+				20B76545C231610BC34FF826E358FB4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C5F5565AA719868E8B19399905F3AE9 /* PBXTargetDependency */,
+			);
+			name = "Pods-RickAndMorty";
+			productName = "Pods-RickAndMorty";
+			productReference = 890012EA904BCB8B85B124ADF2A26CC9 /* Pods_RickAndMorty.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4FF294798D0BB6E732216C7269D13EEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				062A64896E847A6749F58B6BA9A931B1 /* Nuke */,
+				3028B6B139525E7C6D164D5BD7B5EF0E /* Pods-RickAndMorty */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20B76545C231610BC34FF826E358FB4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9821AE607BB13D5F4C7FA99ED7C320A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		028F4687C4DB1BC90D7637562248CA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188F408264642CBE9BFFD2449ABF812F /* Allocations.swift in Sources */,
+				0C09FB8B5D3B5DDADC2DA5F738194687 /* Atomic.swift in Sources */,
+				6AD393FD0D0B45E1EE3D14C14CDC11FB /* DataCache.swift in Sources */,
+				B8F3D7CCF070FC0DC712CDB0ECF53167 /* DataLoader.swift in Sources */,
+				F62B08CF20AF68B582A7164D9B8ECF0B /* Deprecated.swift in Sources */,
+				EDFC573E0411A0B37F1EC67D0FDFC985 /* Extensions.swift in Sources */,
+				9DC45A7A90E00673B175D5D1D3D0710E /* ImageCache.swift in Sources */,
+				4D0B9D6BE85A98A30429C1EE8FF5BA57 /* ImageDecoding.swift in Sources */,
+				E8241FB0C636024B86467370714206C0 /* ImageEncoding.swift in Sources */,
+				15E5CBAFA03D8AA149F66785CB55F1DA /* ImagePipeline.swift in Sources */,
+				02112224BE6602528C742732C2C19F68 /* ImagePipelineConfiguration.swift in Sources */,
+				9849E8E73A02F57C2F6E54EF9C548570 /* ImagePipelineTask.swift in Sources */,
+				948664CFAED08987D259743B22E7E40C /* ImagePreheater.swift in Sources */,
+				F47D84DF5E378AABFAB3DD23196CA4A7 /* ImageProcessing.swift in Sources */,
+				148EA0720E6B917306C4E5600535186B /* ImageRequest.swift in Sources */,
+				ED8F4D11750558E7D137D00F2EC6C87A /* ImageTask.swift in Sources */,
+				A2E810A66F500CE698D0A69138F91DA6 /* ImageViewExtensions.swift in Sources */,
+				321F11886BADEF4D36AB5A811AE817CD /* LinkedList.swift in Sources */,
+				55AAB3202E4107570415A6E1E9F17CD4 /* Log.swift in Sources */,
+				0103F219219B6AA7ADBC5214D8496DC2 /* Nuke-dummy.m in Sources */,
+				1A6609AB54A588DE768E879A96BBD099 /* Operation.swift in Sources */,
+				FC755E52201A4CC2AFA62B91D9E41A70 /* RateLimiter.swift in Sources */,
+				064E7B693C45CBEFED5111034105497E /* ResumableData.swift in Sources */,
+				D86C3D8070AC57297772FDC5C7D4156D /* Task.swift in Sources */,
+				C31F8ED8CD8A8A21459F92414EDD9203 /* TaskDecodeImage.swift in Sources */,
+				D4BDB6AD1384F1FD665B9261D59E0C46 /* TaskLoadImage.swift in Sources */,
+				75035A4A466E37C9FF8013527CB4941D /* TaskLoadImageData.swift in Sources */,
+				ABBB77E920F30DB1BFC34940F31F746B /* TaskProcessImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE284B288E411023ADD194FDB642D882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FF8AEC9BE948D9567548A02A83BA34 /* Pods-RickAndMorty-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C5F5565AA719868E8B19399905F3AE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Nuke;
+			target = 062A64896E847A6749F58B6BA9A931B1 /* Nuke */;
+			targetProxy = 599644D2AF6441797F31E3B885B575AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A213972D104F7A6C66C3B7CB759F893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCBFB2C98253A925382ED746E2F28F69 /* Nuke.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Nuke/Nuke-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nuke/Nuke-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Nuke/Nuke.modulemap";
+				PRODUCT_MODULE_NAME = Nuke;
+				PRODUCT_NAME = Nuke;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B03767941860658EA4B3F8CEB1430DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1196A0626843ECC1A3C0DF13D98B6CA5 /* Pods-RickAndMorty.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RickAndMorty/Pods-RickAndMorty-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RickAndMorty/Pods-RickAndMorty.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B096D98639EBE1C8D8A17793784FD88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCEAE9D9815D9462D44DCA28E54912BE /* Nuke.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Nuke/Nuke-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Nuke/Nuke-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Nuke/Nuke.modulemap";
+				PRODUCT_MODULE_NAME = Nuke;
+				PRODUCT_NAME = Nuke;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D3992A4524845DC8A63DEF52FD3FBD54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011FA2146E5BD6BD8ADC6EC711E3709B /* Pods-RickAndMorty.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RickAndMorty/Pods-RickAndMorty-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RickAndMorty/Pods-RickAndMorty.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E88830E8122DAE1DCCC0D079EC66DFE /* Build configuration list for PBXNativeTarget "Pods-RickAndMorty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3992A4524845DC8A63DEF52FD3FBD54 /* Debug */,
+				2B03767941860658EA4B3F8CEB1430DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9603708E47050D6856B6F72AFC1764E4 /* Build configuration list for PBXNativeTarget "Nuke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B096D98639EBE1C8D8A17793784FD88 /* Debug */,
+				1A213972D104F7A6C66C3B7CB759F893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

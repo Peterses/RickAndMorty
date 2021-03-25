@@ -7,6 +7,11 @@
 
 import Foundation
 
+
+// json -> Swift object to uzywasz Decodable
+// Swift object -> json  to uzywasz Ecodable
+
+// w obie strony to uzywasz Codable
 struct CharacterModel: Decodable {
     let id: Int
     let name: String

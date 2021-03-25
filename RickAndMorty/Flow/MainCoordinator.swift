@@ -21,14 +21,19 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        var vc: UIViewController & Coordinating = CharacterInfoController()
+        let viewModel = CharacterListViewModel()
+        let vc = CharactersListViewController(viewModel: viewModel)
         vc.coordinator = self
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = UIColor.clear
+        vc.title = "Characters List"
+        navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.setViewControllers([vc], animated: false)
-//        navigationController?.navigationBar.isTranslucent = true
+    }
+    
+    func startCharacterInfo(model: CharacterModel) {
+        let viewModel = CharacterInfoViewModel(id: model.id)
+        viewModel.characterModel = model
+        let vc = CharacterInfoViewController(viewModel: viewModel)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }
